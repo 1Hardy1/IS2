@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="558.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="505.0" prefWidth="813.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <ImageView fitHeight="613.0" fitWidth="1608.0" layoutX="-564.0" layoutY="-26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../is%20soldados/battle%20screen.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="370.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WAR SIMULATOR">
+               <font>
+                  <Font name="Bodoni MT Black" size="32.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="PequipoAzul" fitHeight="101.0" fitWidth="136.0" layoutX="91.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../is%20soldados/arquero.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PequipoBlanco" fitHeight="101.0" fitWidth="101.0" layoutX="848.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../is%20soldados/caballo%20japones.jpg.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="500.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VS">
+               <font>
+                  <Font name="Bell MT" size="48.0" />
+               </font>
+            </Text>
+            <ButtonBar layoutX="175.0" layoutY="189.0" prefHeight="40.0" prefWidth="200.0" />
+          <Button fx:id="btnBatalla" layoutX="453.0" layoutY="473.0" mnemonicParsing="false" onAction="#clickbtnBatalla" prefHeight="41.0" prefWidth="152.0" text="INICIAR BATALLA">
+               <font>
+                  <Font name="Bodoni MT Black" size="13.0" />
+               </font>
+            </Button>
+            <Text fx:id="ataqueAzul" fill="WHITE" layoutX="91.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ATAQUE:">
+               <font>
+                  <Font name="Bodoni MT Black" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="ataqueBlanco" fill="WHITE" layoutX="848.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ATAQUE:">
+               <font>
+                  <Font name="Bodoni MT Black" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="resistenciaAzul" fill="WHITE" layoutX="90.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RESISTENCIA:">
+               <font>
+                  <Font name="Bodoni MT Black" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="resistenciaBlanco" fill="WHITE" layoutX="847.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RESISTENCIA:">
+               <font>
+                  <Font name="Bodoni MT Black" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="tipoAzul" fill="WHITE" layoutX="90.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIPO:">
+               <font>
+                  <Font name="Bodoni MT Black" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="tipoBlanco" fill="WHITE" layoutX="848.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIPO:">
+               <font>
+                  <Font name="Bodoni MT Black" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="equipoAzul" fill="WHITE" layoutX="92.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EQUIPO:">
+               <font>
+                  <Font name="Bodoni MT Black" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="equipoBlanco" fill="WHITE" layoutX="849.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EQUIPO:">
+               <font>
+                  <Font name="Bodoni MT Black" size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnSeguir" layoutX="656.0" layoutY="475.0" mnemonicParsing="false" onAction="#clickbtnSeguir" prefHeight="37.0" prefWidth="41.0" text="&gt;">
+               <font>
+                  <Font name="Bodoni MT Black" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSalir" layoutX="43.0" layoutY="475.0" mnemonicParsing="false" onAction="#clickbtnSalir" prefHeight="37.0" prefWidth="31.0" text="X">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+      </children>
+         <effect>
+            <ColorAdjust brightness="-0.21" />
+         </effect>
+    </AnchorPane>
+  </children>
+</VBox>
