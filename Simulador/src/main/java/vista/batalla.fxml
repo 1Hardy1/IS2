@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox prefHeight="558.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="558.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.BatallaControlador">
   <children>
     <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="505.0" prefWidth="813.0" VBox.vgrow="ALWAYS">
       <children>
@@ -22,7 +22,7 @@
         </Label>
             <ImageView fitHeight="613.0" fitWidth="1608.0" layoutX="-564.0" layoutY="-26.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../is%20soldados/battle%20screen.jpg" />
+                  <Image url="@battle%20screen.jpg" />
                </image>
             </ImageView>
             <Text layoutX="370.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WAR SIMULATOR">
@@ -32,12 +32,12 @@
             </Text>
             <ImageView fx:id="PequipoAzul" fitHeight="101.0" fitWidth="136.0" layoutX="91.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../is%20soldados/arquero.jpg" />
+                  <Image url="@arquero.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="PequipoBlanco" fitHeight="101.0" fitWidth="101.0" layoutX="848.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="PequipoBlanco" fitHeight="101.0" fitWidth="101.0" layoutX="799.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../is%20soldados/caballo%20japones.jpg.png" />
+                  <Image url="@caballo%20japones.jpg.png" />
                </image>
             </ImageView>
             <Text layoutX="500.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VS">
@@ -51,42 +51,42 @@
                   <Font name="Bodoni MT Black" size="13.0" />
                </font>
             </Button>
-            <Text fx:id="ataqueAzul" fill="WHITE" layoutX="91.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ATAQUE:">
+            <Text fill="WHITE" layoutX="91.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ATAQUE:">
                <font>
                   <Font name="Bodoni MT Black" size="13.0" />
                </font>
             </Text>
-            <Text fx:id="ataqueBlanco" fill="WHITE" layoutX="848.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ATAQUE:">
+            <Text fill="WHITE" layoutX="809.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ATAQUE:">
                <font>
                   <Font name="Bodoni MT Black" size="13.0" />
                </font>
             </Text>
-            <Text fx:id="resistenciaAzul" fill="WHITE" layoutX="90.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RESISTENCIA:">
+            <Text fill="WHITE" layoutX="90.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RESISTENCIA:">
                <font>
                   <Font name="Bodoni MT Black" size="13.0" />
                </font>
             </Text>
-            <Text fx:id="resistenciaBlanco" fill="WHITE" layoutX="847.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RESISTENCIA:">
+            <Text fill="WHITE" layoutX="808.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RESISTENCIA:">
                <font>
                   <Font name="Bodoni MT Black" size="13.0" />
                </font>
             </Text>
-            <Text fx:id="tipoAzul" fill="WHITE" layoutX="90.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIPO:">
+            <Text fill="WHITE" layoutX="90.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIPO:">
                <font>
                   <Font name="Bodoni MT Black" size="13.0" />
                </font>
             </Text>
-            <Text fx:id="tipoBlanco" fill="WHITE" layoutX="848.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIPO:">
+            <Text fill="WHITE" layoutX="809.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIPO:">
                <font>
                   <Font name="Bodoni MT Black" size="13.0" />
                </font>
             </Text>
-            <Text fx:id="equipoAzul" fill="WHITE" layoutX="92.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EQUIPO:">
+            <Text fill="WHITE" layoutX="79.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EQUIPO:">
                <font>
                   <Font name="Bodoni MT Black" size="13.0" />
                </font>
             </Text>
-            <Text fx:id="equipoBlanco" fill="WHITE" layoutX="849.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EQUIPO:">
+            <Text fill="WHITE" layoutX="810.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EQUIPO:">
                <font>
                   <Font name="Bodoni MT Black" size="13.0" />
                </font>
@@ -101,6 +101,56 @@
                   <Font size="13.0" />
                </font>
             </Button>
+            <Text fill="WHITE" layoutX="820.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BLANCO">
+               <font>
+                  <Font name="Bodoni MT Black" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="122.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AZUL">
+               <font>
+                  <Font name="Bodoni MT Black" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="ataqueAzul" fill="WHITE" layoutX="173.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="38.104997634887695">
+               <font>
+                  <Font name="Bodoni MT Black" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="resistenciaAzul" fill="WHITE" layoutX="199.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="51.0">
+               <font>
+                  <Font name="Bodoni MT Black" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="tipoAzul" fill="WHITE" layoutX="142.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="80.0">
+               <font>
+                  <Font name="Bodoni MT Black" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="teamAzul" fill="WHITE" layoutX="74.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="249.42626952193677">
+               <font>
+                  <Font name="Bodoni MT Black" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="ataqueBlanco" fill="WHITE" layoutX="891.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="38.104997634887695">
+               <font>
+                  <Font name="Bodoni MT Black" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="resistenciaBlanco" fill="WHITE" layoutX="920.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="51.0">
+               <font>
+                  <Font name="Bodoni MT Black" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="tipoBlanco" fill="WHITE" layoutX="860.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="80.0">
+               <font>
+                  <Font name="Bodoni MT Black" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="teamAzul1" fill="WHITE" layoutX="809.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="223.42626952193677">
+               <font>
+                  <Font name="Bodoni MT Black" size="13.0" />
+               </font>
+            </Text>
       </children>
          <effect>
             <ColorAdjust brightness="-0.21" />

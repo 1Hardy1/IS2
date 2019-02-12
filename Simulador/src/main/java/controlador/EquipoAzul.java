@@ -4,9 +4,10 @@ import java.util.Random;
 
 public class EquipoAzul {
 	
-	public static int[] armarEquipoAzul( int s) {
+	public static int[] armarEquipoAzul( ) {
 		
 		Random numAleatorio = new Random();
+		Random numAleatorio2 = new Random();
 	    int a = numAleatorio.nextInt(10-5+1) + 5;
 	    
 	    int x =a-1;
@@ -15,10 +16,10 @@ public class EquipoAzul {
 	    int arquero=0;
 	    int capitan=1;
 	    int sold=0;
-	    
+	  
 	    do {
 	    if(x!=0) { 
-	    sold = numAleatorio.nextInt(3-1+1) + 1;
+	    sold = numAleatorio2.nextInt(3-1+1) + 1;
 	    if(sold == 1) {
 	    	soldado=soldado+1;
 	    }
@@ -32,7 +33,7 @@ public class EquipoAzul {
 	    }
 	    }while(x>0);	
 	    
-	    int[] equipo1 = {soldado, caballo, arquero, capitan};
+	    int[] equipo1 = {soldado, caballo, arquero, capitan, a};
    
 	    return equipo1;
 	}

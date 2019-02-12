@@ -1,5 +1,6 @@
 package controlador;
 
+
 import java.net.URL;
 import java.util.*;
 
@@ -23,10 +24,22 @@ public class BatallaControlador {
 	@FXML
 	private Button btnSeguir;
 	
+
+
+
+
+	
 	@FXML
 	void clickbtnBatalla(ActionEvent event) {
 
+		
+		int[]  equipo= EquipoAzul.armarEquipoAzul();
+		int[] equipo2= new EquipoBlanco().armarEquipoBlanco();
+		
+		
+		
 	}
+
 
 	@FXML
 	void clickbtnSeguir(ActionEvent event) {
@@ -35,6 +48,11 @@ public class BatallaControlador {
 	
 	@FXML
 	void clickbtnSalir(ActionEvent event) {
-		
+		System.exit(0);	
+	}
+	
+	public void comenzarBatalla (int[] equipo1, int[]equipo2) {
+
+
 	}
 }
