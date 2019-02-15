@@ -30,12 +30,12 @@
                   <Font name="Bodoni MT Black" size="32.0" />
                </font>
             </Text>
-            <ImageView fx:id="PequipoAzul" fitHeight="101.0" fitWidth="136.0" layoutX="91.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="pEquipoAzul" fitHeight="101.0" fitWidth="136.0" layoutX="91.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@arquero.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="PequipoBlanco" fitHeight="101.0" fitWidth="101.0" layoutX="799.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="pEquipoBlanco" fitHeight="101.0" fitWidth="101.0" layoutX="799.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@caballo%20japones.jpg.png" />
                </image>
@@ -146,7 +146,7 @@
                   <Font name="Bodoni MT Black" size="13.0" />
                </font>
             </Text>
-            <Text fx:id="teamAzul1" fill="WHITE" layoutX="809.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="223.42626952193677">
+            <Text fx:id="teamBlanco" fill="WHITE" layoutX="809.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="223.42626952193677">
                <font>
                   <Font name="Bodoni MT Black" size="13.0" />
                </font>
