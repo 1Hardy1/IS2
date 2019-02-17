@@ -4,6 +4,6 @@ public class Caballero extends Soldado{
 	
 	int soldier=2;
 	int ataque=25;
-	int defenza=10;
+	int defensa=10;
 
 }

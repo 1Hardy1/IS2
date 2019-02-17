@@ -4,6 +4,6 @@ public class Infanteria extends Soldado{
 	
 	int soldier=1;
 	int ataque=15;
-	int defenza=80;
+	int defensa=80;
 
 }
