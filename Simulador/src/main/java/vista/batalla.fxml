@@ -40,7 +40,7 @@
                   <Image url="@caballo%20japones.jpg.png" />
                </image>
             </ImageView>
-            <Text layoutX="500.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VS">
+            <Text layoutX="471.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VS">
                <font>
                   <Font name="Bell MT" size="48.0" />
                </font>
@@ -151,6 +151,8 @@
                   <Font name="Bodoni MT Black" size="13.0" />
                </font>
             </Text>
+            <Button fx:id="btnEspecialAzul" layoutX="224.0" layoutY="119.0" mnemonicParsing="false" onAction="#clickBtnEspecialAzul" text="ATAQUE ESPECIAL" />
+            <Button fx:id="btnEspecialBlanco" layoutX="656.0" layoutY="119.0" mnemonicParsing="false" onAction="#clickBtnEspecialBlanco" text="ATAQUE ESPECIAL" />
       </children>
          <effect>
             <ColorAdjust brightness="-0.21" />
