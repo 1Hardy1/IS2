@@ -77,7 +77,7 @@ public class BatallaControlador {
 
 		FaseBatalla peleadores= new FaseBatalla();
 		peleadores.combatir();
-		
+		//-----------
 		combattants=peleadores.combatir();
 		
 	

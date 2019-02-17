@@ -28,8 +28,8 @@ public class FaseBatalla {
   
 		//-----------------------------------------------   
 		//Tipo 1 es infanteria, tipo 2 Caballero, tipo 3 Arquero, tipo 4 Capitan
+	
 		
-		//-----------------------------------------------
 		
 	
 			
