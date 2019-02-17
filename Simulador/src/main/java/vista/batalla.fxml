@@ -30,17 +30,17 @@
                   <Font name="Bodoni MT Black" size="32.0" />
                </font>
             </Text>
-            <ImageView fx:id="PequipoAzul" fitHeight="101.0" fitWidth="136.0" layoutX="91.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="pEquipoAzul" fitHeight="101.0" fitWidth="136.0" layoutX="91.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@arquero.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="PequipoBlanco" fitHeight="101.0" fitWidth="101.0" layoutX="799.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="pEquipoBlanco" fitHeight="101.0" fitWidth="101.0" layoutX="799.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@caballo%20japones.jpg.png" />
                </image>
             </ImageView>
-            <Text layoutX="500.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VS">
+            <Text layoutX="471.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VS">
                <font>
                   <Font name="Bell MT" size="48.0" />
                </font>
@@ -146,11 +146,13 @@
                   <Font name="Bodoni MT Black" size="13.0" />
                </font>
             </Text>
-            <Text fx:id="teamAzul1" fill="WHITE" layoutX="809.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="223.42626952193677">
+            <Text fx:id="teamBlanco" fill="WHITE" layoutX="809.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="223.42626952193677">
                <font>
                   <Font name="Bodoni MT Black" size="13.0" />
                </font>
             </Text>
+            <Button fx:id="btnEspecialAzul" layoutX="224.0" layoutY="119.0" mnemonicParsing="false" onAction="#clickBtnEspecialAzul" text="ATAQUE ESPECIAL" />
+            <Button fx:id="btnEspecialBlanco" layoutX="656.0" layoutY="119.0" mnemonicParsing="false" onAction="#clickBtnEspecialBlanco" text="ATAQUE ESPECIAL" />
       </children>
          <effect>
             <ColorAdjust brightness="-0.21" />

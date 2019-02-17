@@ -1,8 +1,11 @@
-package controlador;
+package uan.edu.co.Simulador;
 
 import java.util.Random;
 
 public class EquipoAzul {
+	public EquipoAzul() {
+		
+	}
 	
 	public static int[] armarEquipoAzul( ) {
 		

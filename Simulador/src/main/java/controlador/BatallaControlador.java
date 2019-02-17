@@ -2,6 +2,9 @@ package controlador;
 
 
 import java.net.URL;
+import javafx.scene.text.Text;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import java.util.*;
 
 import javafx.event.ActionEvent;
@@ -12,6 +15,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import uan.edu.co.Simulador.EquipoAzul;
+import uan.edu.co.Simulador.EquipoBlanco;
 
 public class BatallaControlador {
 	
@@ -24,6 +29,35 @@ public class BatallaControlador {
 	@FXML
 	private Button btnSeguir;
 	
+	@FXML
+	private ImageView pEquipoAzul;
+	
+	@FXML
+	private ImageView pEquipoBlano;
+	
+	@FXML
+	private Text ataqueAzul;
+	
+	@FXML
+	private Text resistenciaAzul;
+	
+	@FXML
+	private Text tipoAzul;
+	
+	@FXML
+	private Text teamAzul;
+	
+	@FXML
+	private Text ataqueBlanco;
+	
+	@FXML
+	private Text resistenciaBlanco;
+	
+	@FXML
+	private Text tipoBlanco;
+	
+	@FXML
+	private Text teamBlanco;
 
 
 
@@ -35,9 +69,7 @@ public class BatallaControlador {
 		
 		int[]  equipo= EquipoAzul.armarEquipoAzul();
 		int[] equipo2= new EquipoBlanco().armarEquipoBlanco();
-		
-		
-		
+
 	}
 
 
@@ -51,8 +83,5 @@ public class BatallaControlador {
 		System.exit(0);	
 	}
 	
-	public void comenzarBatalla (int[] equipo1, int[]equipo2) {
 
-
-	}
 }
