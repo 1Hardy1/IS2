@@ -17,6 +17,9 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import uan.edu.co.Simulador.EquipoAzul;
 import uan.edu.co.Simulador.EquipoBlanco;
+import uan.edu.co.Simulador.FaseBatalla;
+import uan.edu.co.Simulador.Infanteria;
+import uan.edu.co.Simulador.Soldado;
 
 public class BatallaControlador {
 	
@@ -27,13 +30,16 @@ public class BatallaControlador {
 	private Button btnSalir;
 
 	@FXML
-	private Button btnSeguir;
+	private Button btnEspecialBlanco;
+	
+	@FXML
+	private Button btnEspecialAzul;
 	
 	@FXML
 	private ImageView pEquipoAzul;
 	
 	@FXML
-	private ImageView pEquipoBlano;
+	private ImageView pEquipoBlanco;
 	
 	@FXML
 	private Text ataqueAzul;
@@ -59,22 +65,66 @@ public class BatallaControlador {
 	@FXML
 	private Text teamBlanco;
 
+	private Soldado[] combattants;
+
+	
+	
+
+	@FXML
+	void clickbtnBatalla(ActionEvent event) throws InterruptedException {
+		
+		
+
+		FaseBatalla peleadores= new FaseBatalla();
+		peleadores.combatir();
+		
+		combattants=peleadores.combatir();
+		
+	
+		
+		int tipo1= (int) combattants[0].getSoldier();
+		int tipo2= (int) combattants[1].getSoldier();
+
+		
+		
+		if(tipo1==0) {// 0 hace referencia al integrante del equipo azul, y 1 hace referencia al integrante del equipo blanco
+			pEquipoAzul.setImage(new Image("/vista/soldado.jpg"));
+		}
+		
+		else if(tipo1==1) {
+			pEquipoAzul.setImage(new Image("/vista/caballo.jpg"));
+		}
+		else if(tipo1==2) {
+			pEquipoAzul.setImage(new Image("/vista/arquero.jpg"));
+		}
+		else if(tipo1==3) {
+			pEquipoAzul.setImage(new Image("/vista/capitan.jpg"));
+		}
+		else if(tipo2==0) {
+			pEquipoBlanco.setImage(new Image("/vista/soldado2.png"));
+		}
+		else if(tipo2==1) {
+			pEquipoBlanco.setImage(new Image("/vista/caballo2.png"));
+		}
+		else if(tipo2==2) {
+			pEquipoBlanco.setImage(new Image("/vista/arquero2.jpg"));
+		}
+		else if(tipo2==3) {
+			pEquipoBlanco.setImage(new Image("/vista/capitan2.jpg"));
+		}
+
+	}
 
 
 
 	
 	@FXML
-	void clickbtnBatalla(ActionEvent event) {
-
+	void clickBtnEspecialAzul(ActionEvent event) {
 		
-		int[]  equipo= EquipoAzul.armarEquipoAzul();
-		int[] equipo2= new EquipoBlanco().armarEquipoBlanco();
-
 	}
-
-
+	
 	@FXML
-	void clickbtnSeguir(ActionEvent event) {
+	void clickBtnEspecialBlanco(ActionEvent event) {
 		
 	}
 	

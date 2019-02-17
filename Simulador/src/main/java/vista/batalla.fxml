@@ -30,16 +30,8 @@
                   <Font name="Bodoni MT Black" size="32.0" />
                </font>
             </Text>
-            <ImageView fx:id="pEquipoAzul" fitHeight="101.0" fitWidth="136.0" layoutX="91.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@arquero.jpg" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="pEquipoBlanco" fitHeight="101.0" fitWidth="101.0" layoutX="799.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@caballo%20japones.jpg.png" />
-               </image>
-            </ImageView>
+            <ImageView fx:id="pEquipoAzul" fitHeight="101.0" fitWidth="136.0" layoutX="91.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="pEquipoBlanco" fitHeight="101.0" fitWidth="101.0" layoutX="799.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true" />
             <Text layoutX="471.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VS">
                <font>
                   <Font name="Bell MT" size="48.0" />
@@ -91,11 +83,6 @@
                   <Font name="Bodoni MT Black" size="13.0" />
                </font>
             </Text>
-            <Button fx:id="btnSeguir" layoutX="656.0" layoutY="475.0" mnemonicParsing="false" onAction="#clickbtnSeguir" prefHeight="37.0" prefWidth="41.0" text="&gt;">
-               <font>
-                  <Font name="Bodoni MT Black" size="15.0" />
-               </font>
-            </Button>
             <Button fx:id="btnSalir" layoutX="43.0" layoutY="475.0" mnemonicParsing="false" onAction="#clickbtnSalir" prefHeight="37.0" prefWidth="31.0" text="X">
                <font>
                   <Font size="13.0" />

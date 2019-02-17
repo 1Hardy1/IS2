@@ -2,8 +2,12 @@ package uan.edu.co.Simulador;
 
 public class Infanteria extends Soldado{
 	
-	int soldier=1;
-	int ataque=15;
-	int defensa=80;
+	private static  int soldier=1;
+	private static  int ataque=15;
+	private static  int defensa=80;
 
+
+
+	
+	
 }

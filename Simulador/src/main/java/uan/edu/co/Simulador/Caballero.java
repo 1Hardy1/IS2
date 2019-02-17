@@ -2,8 +2,8 @@ package uan.edu.co.Simulador;
 
 public class Caballero extends Soldado{
 	
-	int soldier=2;
-	int ataque=25;
-	int defensa=10;
+	private static final int soldier=2;
+	private static final int ataque=25;
+	private static final int defensa=10;
 
 }

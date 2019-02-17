@@ -2,40 +2,42 @@ package uan.edu.co.Simulador;
 
 public class Soldado {
 	
-	 static int soldier;
-	 static int ataque;
-	 static int defensa;
+	 private static int soldier;
+	 private static int ataque;
+	 private static int defensa;
 	
 	
 	public Soldado() {
 		
 	}
-
-	public static int getSoldier() {
-		return soldier;
+	
+	
+	public int getDefensa() {
+	return defensa;
 	}
 
-
-	public static int getAtaque() {
-		return ataque;
-	}
-
-	public static int getDefensa() {
-		return defensa;
-	}
-
-	public static void setSoldier(int soldier) {
+	public  void setSoldier(int soldier) {
 		Soldado.soldier = soldier;
 	}
 
 
-	public static void setAtaque(int ataque) {
+	public  void setAtaque(int ataque) {
 		Soldado.ataque = ataque;
 	}
 
 
-	public static void setDefensa(int defensa) {
+	public  void setDefensa(int defensa) {
 		Soldado.defensa = defensa;
+	}
+	
+
+	public  int getSoldier() {
+		return soldier;
+	}
+
+
+	public  int getAtaque() {
+		return ataque;
 	}
 
 

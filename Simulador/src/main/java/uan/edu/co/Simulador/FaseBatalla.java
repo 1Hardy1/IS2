@@ -4,29 +4,45 @@ import java.util.Random;
 
 public class FaseBatalla {
 	
-	public FaseBatalla() {
-		
-	}
+	private int atackBl;
+	private int defenceBl;
+	private int typeBl;
+	private int specialBl;
+	private int atackWh;
+	private int defenceWh; 
+	private int typeWh;
+	private int specialWh;
+	private int d;
+	private int e;
+	private Soldado soldat1= new Soldado();
+	private Soldado soldat2= new Soldado();
 
-	public  void combatir(int atackBl, int defenceBl, int typeBl, int specialBl, int atackWh, int defenceWh, int typeWh, int specialWh) {
+	public  Soldado[] combatir() throws InterruptedException {
 			
-	 
+		Soldado[] combatientes=null;
 	 
 	 	int[] team1=  EquipoAzul.armarEquipoAzul();
 		int[] team2=  EquipoBlanco.armarEquipoBlanco();
 		
+
   
 		//-----------------------------------------------   
 		//Tipo 1 es infanteria, tipo 2 Caballero, tipo 3 Arquero, tipo 4 Capitan
 		
 		//-----------------------------------------------
 		
-		do {
+	
+			
+			
+			//------------------------------------
 
     	Random numAleatorio2 = new Random(); 
-    	int d;
+    	
     	do {
-    		d = numAleatorio2.nextInt(3-0+1)+1;	// Que unidad sube a combate
+    	
+    			 d = numAleatorio2.nextInt(3-0+1)+1;	// Que unidad sube a combate del equipo azul
+    		
+    	
     	}while(team1[d]==0);
 
 		if(d==0) {
@@ -44,9 +60,12 @@ public class FaseBatalla {
 	    
     	
     	Random numAleatorio3 = new Random(); 
-    	int e;
+    	
     	do {
-		 e = numAleatorio2.nextInt(3-0+1)+1;	// Que unidad sube a combate
+ 
+    			 e = numAleatorio2.nextInt(3-0+1)+1;	// Que unidad sube a combate del equipo blanco
+    		
+		
     	}while(team2[e]==0);
     	
     	if(e==0) {
@@ -60,9 +79,7 @@ public class FaseBatalla {
 		}
 
         //--------------------------------------
-    
-		
-		
+
 				
 			if(d==0) {	
 				if(team1[0]==0 && team1[1]==0 && team1[2]==0 && team1[3]==0) {
@@ -75,10 +92,13 @@ public class FaseBatalla {
 						d = numAleatorio2.nextInt(3-0+1)+1;
 					}while(d==0);
 				}else {
-					Infanteria soldadoAzul= new Infanteria();
+					Soldado soldadoAzul= new Infanteria();
 					atackBl= soldadoAzul.getAtaque();
 					defenceBl=soldadoAzul.getDefensa();
 					typeBl=soldadoAzul.getSoldier(); //soldier hace referencia al tipo de soldado
+					soldadoAzul=  soldat1;
+					System.out.print(soldadoAzul.getAtaque());
+					
 
 				}
 			}
@@ -94,10 +114,14 @@ public class FaseBatalla {
 						d = numAleatorio2.nextInt(3-0+1)+1;
 					}while(d==1);
 				}else {
-				Caballero soldadoAzul= new Caballero();
+					
+				Soldado soldadoAzul= new Caballero();
 				atackBl= soldadoAzul.getAtaque();
 				defenceBl=soldadoAzul.getDefensa();
 				typeBl=soldadoAzul.getSoldier(); //soldier hace referencia al tipo de soldado
+				soldadoAzul=  soldat1;
+				System.out.print(soldadoAzul.getAtaque());
+				
 				}
 			}
 			}
@@ -111,10 +135,13 @@ public class FaseBatalla {
 						d = numAleatorio2.nextInt(3-0+1)+1;
 					}while(d==2);
 				}else {
-				Arquero soldadoAzul= new Arquero();
+				Soldado soldadoAzul= new Arquero();
 				atackBl= soldadoAzul.getAtaque();
 				defenceBl=soldadoAzul.getDefensa();
 				typeBl=soldadoAzul.getSoldier(); //soldier hace referencia al tipo de soldado
+				soldadoAzul=  soldat1;
+				System.out.print(soldadoAzul.getAtaque());
+				
 				}
 			}
 			}
@@ -133,6 +160,8 @@ public class FaseBatalla {
 				defenceBl=soldadoAzul.getDefensa();
 				typeBl=soldadoAzul.getSoldier(); //soldier hace referencia al tipo de soldado
 				specialBl=soldadoAzul.getAtaqueEspecial();
+				System.out.print(soldadoAzul.getAtaque());
+				
 				
 			}
 			}		
@@ -150,10 +179,13 @@ public class FaseBatalla {
 						e = numAleatorio2.nextInt(3-0+1)+1;
 					}while(e==0);
 				}else {
-				Infanteria soldadoBlanco= new Infanteria();
+				Soldado soldadoBlanco= new Infanteria();
 				atackWh= soldadoBlanco.getAtaque();
 				defenceWh=soldadoBlanco.getDefensa();
 				typeWh=soldadoBlanco.getSoldier(); //soldier hace referencia al tipo de soldado
+				soldadoBlanco=  soldat2;
+				System.out.print(soldadoBlanco.getAtaque());
+				
 				}
 			}
 			}
@@ -168,10 +200,13 @@ public class FaseBatalla {
 						e = numAleatorio2.nextInt(3-0+1)+1;
 					}while(e==1);
 				}else {
-				Caballero soldadoBlanco= new Caballero();
+				Soldado soldadoBlanco= new Caballero();
 				atackWh= soldadoBlanco.getAtaque();
 				defenceWh=soldadoBlanco.getDefensa();
 				typeWh=soldadoBlanco.getSoldier(); //soldier hace referencia al tipo de soldado
+				soldadoBlanco=  soldat2;
+				System.out.print(soldadoBlanco.getAtaque());
+				
 			}
 			}
 			}
@@ -185,10 +220,13 @@ public class FaseBatalla {
 						e = numAleatorio2.nextInt(3-0+1)+1;
 					}while(e==2);
 				}else {
-					Arquero soldadoBlanco= new Arquero();
+					Soldado soldadoBlanco= new Arquero();
 					atackWh= soldadoBlanco.getAtaque();
 					defenceWh=soldadoBlanco.getDefensa();
 					typeWh=soldadoBlanco.getSoldier(); //soldier hace referencia al tipo de soldado
+					soldadoBlanco=  soldat2;
+					System.out.print(soldadoBlanco.getAtaque());
+					
 			}
 			}	
 			}
@@ -208,6 +246,7 @@ public class FaseBatalla {
 					defenceWh=soldadoBlanco.getDefensa();
 					typeWh=soldadoBlanco.getSoldier(); //soldier hace referencia al tipo de soldado
 					specialWh=soldadoBlanco.getAtaqueEspecial();
+					System.out.print(soldadoBlanco.getAtaque());
 				}
 			}
 			}	
@@ -221,10 +260,19 @@ public class FaseBatalla {
 		 if(c==1) {
 			 
 			 do {
+				 
+				 Thread.sleep(2000);
+				 
+			
 				 defenceWh=defenceWh-atackBl;
 				 //----------------------------
 				 
+				 Thread.sleep(2000);
+				 
 				 defenceBl=defenceBl-atackBl;
+				 
+				 Thread.sleep(2000);
+			
 				 
 			 }while(defenceBl>0 && defenceWh>0);
 		
@@ -232,22 +280,35 @@ public class FaseBatalla {
 		 }if(c==2) {
 			 
 			 do {
+				 
+				 Thread.sleep(2000);
+	
 				 defenceBl=defenceBl-atackBl;
 				 //---------------------------
 				 
+				 Thread.sleep(2000);
+				 
 				 defenceWh=defenceWh-atackBl;
+				 
+				 Thread.sleep(2000);
+				
 				 
 			 }while(defenceBl>0 && defenceWh>0);
 			 
 		 }
 		
-		}while(team1[0]==0 && team1[1]==0 && team1[2]==0 && team1[3]==0 && team2[0]==0 && team2[1]==0 && team2[2]==0 && team2[3]==0);		
+	
 	//------------------------------------------------------------------------------------
 		
 		
+		combatientes[0]=soldat1;
+		combatientes[1]=soldat2;
+		
+		return combatientes;
+		
+		
 		}
-	
-	
+
 	
 	}
 	

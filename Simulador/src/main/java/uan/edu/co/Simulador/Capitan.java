@@ -2,10 +2,10 @@ package uan.edu.co.Simulador;
 
 public class Capitan extends Soldado {
 	
-	 int soldier=4;
-	 int ataque=40;
-	 int defensa=140;
-	 int ataqueEspecial=80;
+	private static final int soldier=4;
+	private static final int ataque=40;
+	private static final int defensa=140;
+	public static final int ataqueEspecial=80;
 	 
 	 
 	 
@@ -13,9 +13,7 @@ public class Capitan extends Soldado {
 	public int getAtaqueEspecial() {
 		return ataqueEspecial;
 	}
-	public void setAtaqueEspecial(int ataqueEspecial) {
-		this.ataqueEspecial = ataqueEspecial;
-	}
+
 	 
 
 
